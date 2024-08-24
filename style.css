@@ -1,0 +1,263 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+body {
+  position: relative;
+}
+header {
+  box-shadow: 0px 1px 20px 0px gray;
+  background-color: white;
+  position: sticky;
+  top: 0%;
+  z-index: 9;
+}
+.headerMid {
+  width: 1320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+}
+.logo img {
+  width: 130px;
+}
+.headerMid nav ul {
+  display: flex;
+  gap: 25px;
+  font-size: large;
+}
+.banner {
+  background: url('./images/the-town-bg-01.jpg') center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* margin-bottom: 10px; */
+}
+.bannerMid {
+  width: 1320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 249px 0px;
+}
+.banner h1 {
+  font-size: 70px;
+  font-weight: normal;
+  text-shadow: 0px 10px 10px grey;
+  color: white;
+}
+
+.banner i {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+}
+#introduction {
+  width: 100%;
+}
+.introductionMid {
+  width: 1320px;
+  margin: auto;
+  padding: 50px 0px;
+}
+.introImage {
+  display: flex;
+  gap: 120px;
+  margin: 100px 0px;
+}
+.introImageFirst {
+  background: url('./images/the-town-01.jpg');
+  width: 600px;
+  height: 400px;
+}
+.introImageSecond {
+  width: 600px;
+  padding: 10px;
+}
+.introImageSecond h2 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #3496d7;
+}
+.introImageSecond p {
+  font-size: 23px;
+  text-align: justify;
+  color: #8f8f8f;
+  margin: 30px 0px;
+}
+.introImageSecond button {
+  border-color: #3496d7;
+  background-color: #3496d7;
+  padding: 10px 25px;
+  color: white;
+  font-size: large;
+  border-radius: 25px;
+}
+.introDesc {
+  display: flex;
+}
+.introDescContent {
+  flex-basis: 27%;
+  padding: 0px 3%;
+  text-align: center;
+}
+.introDescContent i {
+  font-size: 50px;
+  padding: 20px 0px;
+  color: #3496d7;
+}
+.introDescContent h2 {
+  font-size: 25px;
+  color: #3496d7;
+}
+.introDescContent p {
+  font-size: 17px;
+  color: #8f8f8f;
+  margin: 30px 0px;
+  line-height: 30px;
+}
+#ourWork {
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.ourWorkMid {
+  max-width: 1320px;
+  margin: auto;
+  padding: 50px 0px;
+}
+.ourWorkDesc {
+  text-align: center;
+}
+.ourWorkDesc h2 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #3496d7;
+}
+.ourWorkDesc p {
+  font-size: 18px;
+  padding: 20px 18rem;
+  color: #8f8f8f;
+}
+.ourWorkImage {
+  display: flex;
+  gap: 2%;
+}
+.ourWorkImage1 {
+  background: url('./images/gallery-tn-01.jpg') no-repeat;
+}
+.ourWorkImage2 {
+  background: url('./images/gallery-tn-02.jpg') no-repeat;
+}
+.ourWorkImage3 {
+  background: url('./images/gallery-img-05.jpg') no-repeat;
+}
+.ourWorkImage4 {
+  background: url('./images/gallery-tn-04.jpg') no-repeat;
+}
+.ourWorkImage5 {
+  background: url('./images/gallery-img-06.jpg') no-repeat;
+}
+.ourWorkImageCommon {
+  flex-basis: 18%;
+  height: 350px;
+  background-size: cover;
+  position: relative;
+}
+.ourWorkImageShadow {
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.ourWorkImageContent > p {
+  position: absolute;
+  display: inline-block;
+  max-width: min-content;
+  color: white;
+  font-size: 1.8rem;
+  top: 30%;
+  left: 30%;
+  transition: 1s ease;
+  opacity: 0;
+}
+.ourWorkImageShadow:hover {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+.ourWorkImageCommon:hover .ourWorkImageContent > p {
+  top: 50%;
+  opacity: 1;
+}
+
+#contactUs {
+  background: url('./images/the-town-bg-02.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contactUsMid {
+  max-width: 1320px;
+  margin: auto;
+  height: 500px;
+}
+.contactUsMid > h2 {
+  color: white;
+  font-size: 3em;
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+.contactUsMid > .blankDiv {
+  width: 30%;
+  border: 5px solid white;
+}
+.contactUsMid > p {
+  padding: 30px 0px;
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+}
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.contactInfoPhone,
+.contactInfoEmail,
+.lacationInfoMap,
+.subscribeEmail {
+  flex-basis: 50%;
+  
+}
+
+.contactInfoPhone > a > i,
+.contactInfoPhone > a > span,
+.contactInfoEmail > a > i,
+.contactInfoEmail > a > span,
+.lacationInfoMap > a > i,
+.lacationInfoMap > a > span,
+.subscribeEmail > input {
+  margin-right: 10px;
+  flex-basis: 50%;
+  color: white;
+  font-size: large;
+}
+.locationInfo {
+  display: flex;
+}
+.subscribeEmail > button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+}
+.copyright{
+  text-align: center;
+  color: white;
+  margin-top: 5em;
+}
